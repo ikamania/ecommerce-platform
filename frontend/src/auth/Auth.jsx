@@ -9,7 +9,7 @@ const url = "http://localhost:8000"
 
 export function AuthProvider({ children }) {
   const [token, setToken] = useState(
-    () => JSON.parse(localStorage.getItem("tokens")) || null
+    () => JSON.parse(localStorage.getItem("token")) || null
   )
   const [user, setUser] = useState(null)
 

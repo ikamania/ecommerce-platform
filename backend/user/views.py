@@ -14,4 +14,4 @@ class UserViewSet(viewsets.ModelViewSet):
             return [permissions.AllowAny()]
 
         return [permissions.AllowAny()] # allow any request
-
+    
